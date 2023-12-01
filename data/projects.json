@@ -1,0 +1,61 @@
+[
+    
+    {
+    "class":"card_1",
+    "image":"./images/projects/gpp.webp",
+    "link":"https://greatplainspress.ca/",
+    "description":"Book Store",
+    "technologies":["html","sass","woocommerce","wordpress","ajax","jquery","gutenberg editor","custom blocks","acf"]
+},
+{  "class":"card_2",
+    "image":"./images/projects/levelitup.webp",
+    "link":"https://levelitupmb.ca/",
+    "description":"Web Site",
+    "technologies":["html","sass","css","wordpress","ajax","jquery","gutenberg editor","custom blocks","acf"]   
+},
+{     "class":"card_3",
+    "image":"./images/projects/ccmec.webp",
+    "link":"https://ccme-convention.ca/",
+    "description":"Web Site",
+    "technologies":["html","sass","css","wordpress","ajax","jquery","gutenberg editor","custom blocks","acf"]   
+},
+{
+    "class":"card_4",
+    "image":"./images/projects/illumia.webp",
+    "link":"https://illumialabs.ai/",
+    "description":"Web Site",
+    "technologies":["html","sass","css","wordpress","ajax","jquery","gutenberg editor","custom blocks","acf"]   
+},
+{     "class":"card_5",
+    "image":"./images/projects/chrr.webp",
+    "link":"https://wordpress-364990-3838787.cloudwaysapps.com/",
+    "description":"Web Site for Manitoba Governement(in development state)",
+    "technologies":["html","sass","css","wordpress","ajax","jquery","gutenberg editor","custom blocks","acf", "wordpress rest api"]   
+},
+{     "class":"card_6",
+    "image":"./images/projects/baarn.webp",
+    "link":"https://wordpress-766591-3896990.cloudwaysapps.com/",
+    "description":"Web Site for Boreal & Arctic Agriculture Research Network(in development state)",
+    "technologies":["html","sass","css","wordpress","ajax","jquery","gutenberg editor","custom blocks","acf"]   
+},
+{     "class":"card_7",
+    "image":"./images/projects/cedar.webp",
+    "link":"https://cedarcentre.ca",
+    "description":"Web Site",
+    "technologies":["html","sass","css","wordpress","ajax","jquery","gutenberg editor","custom blocks","acf"]   
+},
+{     "class":"card_8",
+    "image":"./images/projects/smallcamp.webp",
+    "link":"https://smallcamp.coop",
+    "description":"Web Site",
+    "technologies":["html","sass","css","wordpress","ajax","jquery","WPBackery editor","acf", "multisite", "multi-language site"]   
+},
+{     "class":"card_9",
+    "image":"./images/projects/onalee.webp",
+    "link":"https://oafilmstudio.com/",
+    "description":"Landing Page",
+    "technologies":["html","css","wordpress","jquery"]   
+}
+
+
+]

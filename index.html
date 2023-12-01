@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
-    <h1>DHORDYKO</h1>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="header-section">@@include('./components/header.html')</div>
+    <div class="history-section">@@include('./components/history.html')</div>
+    <div class="protfolio-section">
+      @@include('./components/portfolio.html')
+      <div class="card-list-container">
+        @@loop('./components/card.html','./data/projects.json')
+      </div>
+    </div>
+
+    @@include('./components/footer.html')
+
+    <div class="section-1"></div>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,79 @@
+.protfolio-section {
+    @include layout;
+
+    .card-list-container {
+        .card-item {
+            margin-bottom: 10px;
+            border-radius: 10px;
+            .front {
+                height: 100%;
+                img {
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .back {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    display: block;
+                    max-width: 77%;
+                }
+                .technnologies-section {
+                    display: block;
+                    max-width: 80%;
+                    margin: 0 auto;
+                }
+                .technologies-container {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        display: inline-block;
+                    }
+                    li:last-child {
+                        span {
+                            display: none;
+                        }
+                    }
+                    &::before {
+                        content: "(";
+                    }
+                    &::after {
+                        content: ")";
+                    }
+                }
+            }
+
+            &.card_1 {
+                height: 190px;
+            }
+            &.card_2 {
+                height: 300px;
+            }
+            &.card_3 {
+                height: 200px;
+            }
+            &.card_4 {
+                height: 350px;
+            }
+            &.card_5 {
+                height: 330px;
+            }
+            &.card_6 {
+                height: 450px;
+            }
+            &.card_7 {
+                height: 450px;
+            }
+            &.card_8 {
+                height: 430px;
+            }
+            &.card_9 {
+                height: 430px;
+            }
+        }
+    }
+}
