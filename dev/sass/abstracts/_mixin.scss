@@ -1,0 +1,22 @@
+@mixin layout {
+   max-width: calc(1250px + 10%);
+   padding-left: 5%;
+   padding-right: 5%;
+   width: 100%;
+   margin: auto;
+}
+
+@mixin gradient() {
+   background: -webkit-linear-gradient(#22d3fd, #eb3477);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+@mixin gradient-none {
+   background: none;
+   -webkit-background-clip: unset;
+   -webkit-text-fill-color: unset;
+}
+@mixin pseudo {
+   content: "";
+   display: block;
+}
