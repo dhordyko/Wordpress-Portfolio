@@ -513,6 +513,18 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
 .protfolio-section .card-list-container .card-item.card_9 {
   height: 530px;
 }
+.protfolio-section .card-list-container .card-item.card_10 {
+  height: 450px;
+}
+.protfolio-section .card-list-container .card-item.card_11 {
+  height: 430px;
+}
+.protfolio-section .card-list-container .card-item.card_12 {
+  height: 550px;
+}
+.protfolio-section .card-list-container .card-item.card_13 {
+  height: 330px;
+}
 
 .history-section {
   display: none;
