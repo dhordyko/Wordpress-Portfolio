@@ -244,7 +244,6 @@ header .main-header__inner-container nav ul li a {
 }
 header .main-header__main-content-container {
   display: flex;
-  justify-content: space-between;
   position: relative;
 }
 header .main-header__main-content-container .main-header__social-links {
@@ -269,7 +268,6 @@ header .main-header__main-content-container .main-header__text-holder {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
   max-width: 550px;
 }
 header .main-header__main-content-container .main-header__text-holder p {
@@ -325,6 +323,7 @@ header .main-header__main-content-container .main-header__img-bg-holder {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: auto;
 }
 header .main-header__main-content-container .main-header__img-bg-holder img {
   max-width: 100%;
@@ -340,9 +339,9 @@ footer.footer-container {
   justify-content: space-between;
   padding: 0 5%;
   flex-wrap: wrap;
-  height: 300px;
+  height: 200px;
   max-width: 1400px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 footer.footer-container::before {
   content: "";
@@ -353,7 +352,6 @@ footer.footer-container::before {
   display: block;
   position: absolute;
   background-size: 100% 100%;
-  width: 100%;
   height: 300px;
   opacity: 0.2;
   bottom: -100px;
@@ -376,14 +374,13 @@ footer.footer-container > div {
 footer.footer-container .column-2 {
   display: flex;
   justify-content: end;
-  width: 160px;
 }
 footer.footer-container .column-2 .main-header__social-links {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
   list-style: none;
-  margin-top: 80px;
+  max-width: 160px;
 }
 footer.footer-container .column-2 .main-header__social-links li {
   width: 100%;
@@ -401,7 +398,6 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(2) {
   max-width: 40px;
 }
 footer.footer-container .column-2 .main-header__social-links li:nth-child(3), footer.footer-container .column-2 .main-header__social-links li:nth-child(4) {
-  padding-left: 23px;
   margin-bottom: 15px;
 }
 footer.footer-container .column-2 .main-header__social-links li:nth-child(3) a, footer.footer-container .column-2 .main-header__social-links li:nth-child(4) a {
@@ -591,6 +587,7 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
   justify-content: space-between;
 }
 .history-section .history-list > div .content-item .inner-column-1 {
+  margin-top: 35px;
   width: 50%;
   display: flex;
   align-items: center;
@@ -619,7 +616,6 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
     height: fit-content;
   }
   header .main-header__img-bg-holder {
-    position: absolute;
     top: 0;
   }
   header .main-header__img-bg-holder img {
@@ -631,10 +627,14 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
   }
   header .main-header__main-content-container {
     padding-top: 0px;
-    flex-direction: row;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 50vw;
+  }
+  header .main-header__main-content-container ul.main-header__social-links {
+    position: absolute;
+    padding-top: 0px;
+    top: 0;
   }
   header .main-header__main-content-container .main-header__text-holder {
     width: 80%;
@@ -653,7 +653,6 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
     height: fit-content;
   }
   header .main-header__img-bg-holder {
-    position: absolute;
     top: 0;
   }
   header .main-header__img-bg-holder img {
@@ -678,15 +677,12 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
     width: 30px !important;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) and (min-width: 0px) and (max-width: 400px) {
-  header .main-header__text-holder {
-    height: 400px;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   header .main-header__text-holder h1 {
     font-size: 4.2rem;
   }
+}
+@media (min-width: 0px) and (max-width: 768px) {
   header .main-header__inner {
     position: relative;
   }
@@ -759,15 +755,13 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
   }
   header .main-header__main-content-container {
     padding-top: 0px;
-    flex-direction: row;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 65vw;
   }
   header .main-header__main-content-container .main-header__text-holder {
     width: 80%;
     align-items: end;
-    height: 400px;
   }
   header .main-header__main-content-container .main-header__text-holder > div {
     width: 100%;
@@ -817,14 +811,12 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
     height: 26vw;
     max-width: 100px;
     max-height: 100px;
-    margin: 0 auto;
     margin-top: 45px;
   }
   body div.history-section div#history div.year-container span {
     font-size: 18px;
   }
   body div.history-section div#history div.content-item {
-    width: 63%;
     padding-top: 15px;
   }
   body div.history-section div#history div.content-item .inner-column-1 {
@@ -846,6 +838,7 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
   body div.history-section {
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-top: 25%;
   }
   body div.history-section div#history div.content-item {
     flex-direction: column;
@@ -861,9 +854,17 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
     min-height: auto;
   }
 }
+@media (min-width: 0px) and (max-width: 400px) {
+  body div.history-section {
+    margin-top: 35%;
+  }
+  body div.history-section .history-list::before {
+    top: -2%;
+  }
+}
 /* Responsive View Mixins*/
 /* Mobile View */
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 650px) {
   footer.footer-container {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -873,6 +874,7 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
   }
   footer.footer-container .column-2 ul {
     width: 100%;
+    max-width: 100% !important;
   }
 }
 /* Responsive View Mixins*/
