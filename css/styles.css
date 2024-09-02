@@ -421,6 +421,7 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
   margin-bottom: 10px;
   border-radius: 10px;
   position: relative;
+  min-height: 400px;
 }
 .protfolio-section .card-list-container .card-item .front {
   height: 100%;
@@ -428,6 +429,7 @@ footer.footer-container .column-2 .main-header__social-links li:nth-child(1), fo
 .protfolio-section .card-list-container .card-item .front img {
   object-fit: cover;
   border-radius: 10px;
+  min-height: 400px;
 }
 .protfolio-section .card-list-container .card-item .back {
   display: flex;
