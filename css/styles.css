@@ -138,6 +138,7 @@ header {
   padding-left: 5%;
   padding-right: 5%;
   margin: 0 auto;
+  transition: background-color 0.3s ease;
 }
 header span.circle {
   content: "";
@@ -333,6 +334,18 @@ header .main-header__main-content-container .main-header__img-bg-holder img {
 header .contact-container__link {
   font-size: 25px;
 }
+header .main-header__inner.scrolled {
+  position: fixed;
+  background: #010101;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 35px 5%;
+}
+header .main-header__inner.scrolled img {
+  max-width: 70px;
+}
 
 footer.footer-container {
   display: flex;
@@ -377,36 +390,24 @@ footer.footer-container .column-2 {
 }
 footer.footer-container .column-2 .main-header__social-links {
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 0px;
-  list-style: none;
-  max-width: 160px;
+  flex-direction: column;
+  row-gap: 15px;
 }
-footer.footer-container .column-2 .main-header__social-links li {
-  width: 100%;
-  display: block;
-}
-footer.footer-container .column-2 .main-header__social-links li a {
+footer.footer-container .column-2 .main-header__social-links .socials-wrap {
   display: flex;
-  align-items: center;
-  height: 100%;
 }
-footer.footer-container .column-2 .main-header__social-links li:nth-child(1) {
-  max-width: 70px;
-}
-footer.footer-container .column-2 .main-header__social-links li:nth-child(2) {
-  max-width: 40px;
-}
-footer.footer-container .column-2 .main-header__social-links li:nth-child(3), footer.footer-container .column-2 .main-header__social-links li:nth-child(4) {
-  margin-bottom: 15px;
-}
-footer.footer-container .column-2 .main-header__social-links li:nth-child(3) a, footer.footer-container .column-2 .main-header__social-links li:nth-child(4) a {
-  font-size: 20px;
-  text-decoration: none;
-}
-footer.footer-container .column-2 .main-header__social-links li:nth-child(1), footer.footer-container .column-2 .main-header__social-links li:nth-child(2) {
+footer.footer-container .column-2 .main-header__social-links .socials-wrap a {
   flex-basis: 50%;
-  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+footer.footer-container .column-2 .main-header__social-links .socials-wrap a:nth-child(2) img {
+  width: 45px;
+}
+footer.footer-container .column-2 .main-header__social-links .footer-phone,
+footer.footer-container .column-2 .main-header__social-links .footer-mail {
+  padding-left: 13%;
 }
 
 /* Responsive View Mixins*/
