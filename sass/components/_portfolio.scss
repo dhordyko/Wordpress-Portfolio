@@ -1,0 +1,116 @@
+@import "../abstracts/mixin";
+.protfolio-section {
+  @include layout(72);
+  .card-list-container {
+    .card-item {
+      margin-bottom: 10px;
+      border-radius: 10px;
+      position: relative;
+      min-height: 400px;
+      .front {
+        height: 100%;
+        img {
+          object-fit: cover;
+          border-radius: 10px;
+          min-height: 400px;
+        }
+      }
+      .back {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        a.card_link {
+          display: block;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          cursor: pointer;
+        }
+        h3 {
+          display: block;
+          max-width: 77%;
+          text-align: center;
+        }
+        .technnologies-section {
+          display: block;
+          max-width: 80%;
+          margin: 0 auto;
+          & > p {
+            font-weight: 700;
+            letter-spacing: 0.7px;
+          }
+        }
+        .technologies-container {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 1.8rem;
+          justify-content: center;
+          li {
+            display: inline-block;
+            span {
+              margin-right: 5px;
+            }
+          }
+          li:last-child {
+            span {
+              display: none;
+            }
+          }
+          &::before {
+            content: "(";
+          }
+          &::after {
+            content: ")";
+          }
+        }
+      }
+
+      &.card_1 {
+        height: 300px;
+      }
+      &.card_2 {
+        height: 400px;
+      }
+      &.card_3 {
+        height: 300px;
+      }
+      &.card_4 {
+        height: 450px;
+      }
+      &.card_5 {
+        height: 430px;
+      }
+      &.card_6 {
+        height: 550px;
+      }
+      &.card_7 {
+        height: 550px;
+      }
+      &.card_8 {
+        height: 530px;
+      }
+      &.card_9 {
+        height: 530px;
+      }
+      &.card_10 {
+        height: 450px;
+      }
+      &.card_11 {
+        height: 430px;
+      }
+      &.card_12 {
+        height: 550px;
+      }
+      &.card_13 {
+        height: 330px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@mixin gradient() {
+  background: -webkit-linear-gradient(#22d3fd, #eb3477);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin gradient-none {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+@mixin pseudo {
+  content: "";
+  display: block;
+}
+
+/* Responsive View Mixins*/
+/* Mobile View */
+@mixin screen($max, $min) {
+  @media (min-width: #{$min}px) and (max-width: #{$max}px) {
+    @content;
+  }
+}
+
+@mixin layout($box-width) {
+  @if ($box-width != "undefined") {
+    max-width: calc(#{$box-width}vw + 10%);
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+  }
+}

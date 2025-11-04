@@ -1,0 +1,59 @@
+//Font Family Poppins
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  src: url(./fonts/poppins/Poppins-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: bold;
+  font-weight: 400;
+  src: url(./fonts/poppins/Poppins-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/poppins/Poppins-Light.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: url(./fonts/poppins/Poppins-SemiBold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/poppins/Poppins-Medium.ttf) format("ttf");
+}
+
+p,
+a {
+  font-size: 1.6rem;
+  transition: ease-in-out 0.3s;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4.3rem;
+}
+h3 {
+  font-size: 3.8rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+h5 {
+  font-size: 2.4rem;
+}
+
+.highlight {
+  background: -webkit-linear-gradient(#22d3fd, #eb3477);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

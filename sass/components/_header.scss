@@ -1,0 +1,239 @@
+@import "../abstracts/mixin";
+@import "../abstracts/typography";
+@import "../abstracts/variables";
+
+header {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  height: 700px;
+  font-family: $poppins;
+  @include layout(82);
+  transition: background-color 0.3s ease;
+  span.circle {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 25%;
+    background: $theme-pink;
+    opacity: 0.6;
+    border-radius: 50px;
+    z-index: 0;
+  }
+  a {
+    @include gradient;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      @include gradient-none;
+      color: $theme-violet;
+    }
+  }
+
+  .main-header {
+    &__inner {
+      margin-top: 0px;
+      display: flex;
+      height: fit-content;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .contact-outer-container {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        .contact-container {
+          position: relative;
+          display: flex;
+          margin-top: -35px;
+          z-index: 99;
+          &:after {
+            @include pseudo;
+
+            width: 50px;
+            height: 100px;
+            right: -50px;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          .circle {
+            top: -1px;
+            left: -19px;
+          }
+          &__link {
+            position: relative !important;
+            z-index: 0;
+          }
+        }
+      }
+    }
+    .logo-container {
+      flex-basis: 25%;
+    }
+    .contact-outer-container {
+      flex-basis: 25%;
+    }
+    &__inner-container {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-basis: 65%;
+      width: 100%;
+
+      nav {
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          padding-left: 0px;
+          justify-content: space-between;
+          width: 100%;
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            margin-right: 15px;
+            span {
+              img {
+                margin-right: 15px;
+              }
+            }
+            a {
+              color: $theme-violet;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-header__main-content-container {
+    display: flex;
+
+    position: relative;
+    .main-header__social-links {
+      list-style: none;
+      display: flex;
+      padding-top: 100px;
+      margin-right: 25px;
+      padding-left: 0px;
+      justify-content: start;
+      flex-direction: column;
+      align-items: center;
+      li {
+        &:nth-child(1) {
+          img {
+            width: 70px;
+            display: block;
+          }
+        }
+        &:nth-child(2) {
+          img {
+            width: 40px;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .main-header {
+      &__text-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        max-width: 550px;
+        p {
+          line-height: 1.5;
+        }
+        & > div {
+          width: 80%;
+        }
+        .about-me-trigger {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 35px;
+          max-width: 350px;
+          img {
+            max-width: 70px;
+          }
+          .about-me-container {
+            position: relative;
+            width: 450px;
+            margin-left: 50px;
+            height: 30px;
+            height: 50px;
+            margin-top: 35px;
+
+            &:hover {
+              cursor: pointer;
+              .circle {
+                background-color: $theme-violet;
+              }
+              a {
+                @include gradient;
+              }
+            }
+            & > div {
+            }
+            .about-me__link {
+              position: relative;
+              height: 41px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-top: 3px;
+
+              display: flex;
+              align-items: center;
+              z-index: 99;
+
+              span {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+      &__img-bg-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        img {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .contact-container__link {
+    font-size: 25px;
+  }
+  & .main-header__inner.scrolled {
+    position: fixed;
+    background: #010101;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 35px 5%;
+
+    img {
+      max-width: 70px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header-section">@@include('./components/header.html', {
+      "cv": "./data/CV-Daria_Khordykova.pdf",
+      })</div>
+    <div class="history-section">@@include('./components/history.html')</div>
+    <div id="protfolio-section" class="protfolio-section">
+      @@include('./components/portfolio.html')
+      <div class="card-list-container">
+        @@loop('./components/card.html','./data/projects.json')
+      </div>
+    </div>
+
+    @@include('./components/footer.html')
+
+    <div class="section-1"></div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

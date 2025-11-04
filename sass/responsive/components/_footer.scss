@@ -1,0 +1,15 @@
+@import "../../abstracts/mixin";
+@include screen($min: 0, $max: 650) {
+  footer.footer-container {
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+    .column-2 {
+      width: 100%;
+      ul {
+        width: 100%;
+        max-width: 100% !important;
+      }
+    }
+  }
+}

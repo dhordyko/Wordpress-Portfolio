@@ -1,0 +1,277 @@
+[
+  {
+    "class": "card_14",
+    "image": "./images/projects/vecova.webp",
+    "link": "https://www.vecova.ca/",
+    "description": "Vecova",
+    "technologies": [
+      "HTML",
+      "WordPress Core",
+      "Gutenberg editor",
+      "Custom blocks",
+      "WordPress rest api",
+      "SASS",
+      "Accessibility"
+    ]
+  },
+  {
+    "class": "card_18",
+    "image": "./images/projects/cssb.webp",
+    "link": "https://cssb.mb.ca/",
+    "description": "CSSB",
+    "technologies": [
+      "HTML",
+      "WordPress Core",
+      "Gutenberg editor",
+      "Custom blocks",
+      "WordPress rest api",
+      "SASS",
+      "Accessibility"
+    ]
+  },
+  {
+    "class": "card_15",
+    "image": "./images/projects/new-directions.webp",
+    "link": "https://newdirections.mb.ca",
+    "description": "New Directions",
+    "technologies": [
+      "HTML",
+      "WordPress Core",
+      "Gutenberg editor",
+      "Custom blocks",
+      "WordPress API",
+      "SASS",
+      "Accessibility"
+    ]
+  },
+  {
+    "class": "card_16",
+    "image": "./images/projects/wapaskwa.webp",
+    "link": "https://wapaskwa.ca",
+    "description": "Wapaskwa",
+    "technologies": [
+      "HTML",
+      "WordPress Core",
+      "Gutenberg editor",
+      "Custom blocks",
+      "WordPress API",
+      "SASS",
+      "Accessibility"
+    ]
+  },
+  {
+    "class": "card_17",
+    "image": "./images/projects/onalee.webp",
+    "link": "https://oafilmstudio.com/",
+    "description": "Onalee",
+    "technologies": [
+      "HTML",
+      "WordPress Core",
+      "Gutenberg editor",
+      "Custom blocks",
+      "WordPress API",
+      "SASS",
+      "Accessibility"
+    ]
+  },
+
+  {
+    "class": "card_1",
+    "image": "./images/projects/gpp.webp",
+    "link": "https://greatplainspress.ca/",
+    "description": "Book Store",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "WooCommerce",
+      "WordPress",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF"
+    ]
+  },
+  {
+    "class": "card_2",
+    "image": "./images/projects/levelitup.webp",
+    "link": "https://levelitupmb.ca/",
+    "description": "LevelItUp",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "CSS",
+      "WordPress",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF"
+    ]
+  },
+  {
+    "class": "card_3",
+    "image": "./images/projects/ccmec.webp",
+    "link": "https://ccme-convention.ca/",
+    "description": "CCME",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "CSS",
+      "WordPress",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF"
+    ]
+  },
+  {
+    "class": "card_4",
+    "image": "./images/projects/illumia.webp",
+    "link": "https://illumialabs.ai/",
+    "description": "Illumia Labs",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "CSS",
+      "WordPress",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF"
+    ]
+  },
+  {
+    "class": "card_5",
+    "image": "./images/projects/chrr.webp",
+    "link": "https://chrr.info",
+    "description": "Manitoba Human Rights ",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "CSS",
+      "WordPress",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF",
+      "WordPress rest api"
+    ]
+  },
+  {
+    "class": "card_6",
+    "image": "./images/projects/baarn.webp",
+    "link": "https://baarn.ca",
+    "description": "Boreal & Arctic Agriculture Research Network ",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "CSS",
+      "WordPress",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF"
+    ]
+  },
+  {
+    "class": "card_7",
+    "image": "./images/projects/cedar.webp",
+    "link": "https://cedarcentre.ca",
+    "description": "Cedar Centre",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "CSS",
+      "WordPress",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF"
+    ]
+  },
+
+  {
+    "class": "card_8",
+    "image": "./images/projects/traff.webp",
+    "link": "https://www.traf.mb.ca",
+    "description": "TRAFF",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "CSS",
+      "WordPress Core",
+      "AJAX",
+      "jQuery",
+      "Gutenberg editor",
+      "Custom blocks",
+      "ACF"
+    ]
+  },
+
+  {
+    "class": "card_10",
+    "image": "./images/projects/avangarda.webp",
+    "link": "https://studioavangarda.pl/",
+    "description": "Studio Avangarda",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "WordPress Core",
+      "Elementor",
+      "jQuery",
+      "WPBackery",
+      "Woocommerce"
+    ]
+  },
+    {
+    "class": "card_11",
+    "image": "./images/projects/revinew.webp",
+    "link": "https://wordpress-1317953-5490154.cloudwaysapps.com/",
+    "description": "Reveniw",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "WordPress Block Theme",
+      "Gutenberg",
+      "jQuery",
+      "ACF",
+      "CSS",
+      "Animation"
+    ]
+  },
+ {
+    "class": "card_12",
+    "image": "./images/projects/downtown.webp",
+    "link": "https://downtownwinnipegbiz.com",
+    "description": "Downtown Biz",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "WordPress Block Theme",
+      "Gutenberg",
+      "ACF",
+      "jQuery",
+      "Chart.js"
+    ]
+  },
+  {
+    "class": "card_13",
+    "image": "./images/projects/foldecor.webp",
+    "link": "https://www.foldekor.pl/",
+    "description": "Foldecor",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "WordPress Core",
+      "jQuery",
+      "AJAX",
+      "WPBackery"
+    ]
+  }
+]

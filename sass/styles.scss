@@ -1,0 +1,164 @@
+@import "./abstracts/variables";
+@import "./abstracts/typography";
+@import "./abstracts/mixin";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/portfolio";
+@import "./components/history";
+@import "./responsive/responsive";
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: black;
+  position: relative;
+  &::before {
+    content: "";
+    background: url(../images/bg-image.webp);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 600px;
+    opacity: 0.2;
+    top: 4%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @include screen($max: 1350, $min: 1000) {
+  }
+}
+//masonry
+.grid-sizer,
+.card-item {
+  width: 30.3%;
+}
+@include screen($max: 600, $min: 0) {
+  .grid-sizer,
+  .card-item {
+    width: 100%;
+  }
+}
+@include screen($max: 1000, $min: 600) {
+  .grid-sizer,
+  .card-item {
+    width: 47%;
+  }
+}
+
+.card-item {
+  padding: 4px;
+  margin-bottom: 4px;
+  background: linear-gradient(
+    135deg,
+    rgba(239, 54, 108, 1) 0%,
+    rgba(132, 95, 254, 1) 20%,
+    rgba(37, 208, 253, 1) 61%,
+    rgba(198, 38, 215, 1) 88%
+  );
+  // base
+  &.flip {
+    position: relative;
+    > .front,
+    > .back {
+      display: block;
+      transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition-duration: 0.5s;
+      transition-property: transform, opacity;
+    }
+    > .front {
+      transform: rotateY(0deg);
+    }
+    > .back {
+      position: absolute;
+      opacity: 0;
+      top: 0px;
+      left: 0px;
+      width: 97%;
+      height: 97%;
+      transform: rotateY(-180deg);
+      background: black;
+      margin: 5px;
+      border-radius: 5px;
+    }
+    &:hover {
+      > .front {
+        transform: rotateY(180deg);
+        img {
+          opacity: 0;
+        }
+      }
+      > .back {
+        opacity: 1;
+        transform: rotateY(0deg);
+      }
+    }
+    &.flip-vertical {
+      > .back {
+        transform: rotateX(-180deg);
+      }
+      &:hover {
+        > .front {
+          transform: rotateX(180deg);
+        }
+        > .back {
+          transform: rotateX(0deg);
+        }
+      }
+    }
+  }
+}
+.card-item img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  filter: hue-rotate(90deg);
+
+  @media screen and (max-width: 414px) {
+    border: 5px solid white;
+  }
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  src: url(./fonts/poppins/Poppins-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: bold;
+  font-weight: 400;
+  src: url(./fonts/poppins/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/poppins/Poppins-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: url(./fonts/poppins/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/poppins/Poppins-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  src: url(./fonts/poppins/Poppins-Regular.woff) format("woff");
+}
