@@ -1,0 +1,40 @@
+name: Sync dist folder to main
+
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - "dist/**" # Only run when files in dist/ change
+
+jobs:
+  sync-dist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout dev branch
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Switch to main branch
+        run: |
+          git checkout main
+
+      - name: Copy dist folder from dev
+        run: |
+          git checkout dev -- dist/
+          git add dist
+          git commit -m "Auto-sync dist from dev [skip ci]" || echo "No changes to commit"
+
+      - name: Push changes to main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin main
