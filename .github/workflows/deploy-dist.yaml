@@ -1,13 +1,13 @@
 name: Sync dist folder to main
 
 on:
-  permissions:
-    contents: write
   push:
     branches:
       - dev
     paths:
       - "dist/**" # Only run when files in dist/ change
+permissions:
+  contents: write
 
 jobs:
   sync-dist:
