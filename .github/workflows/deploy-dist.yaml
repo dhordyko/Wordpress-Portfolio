@@ -1,6 +1,8 @@
 name: Sync dist folder to main
 
 on:
+  permissions:
+    contents: write
   push:
     branches:
       - dev
