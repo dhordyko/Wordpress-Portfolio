@@ -33,11 +33,14 @@ jobs:
       - name: Checkout main branch
         run: git checkout main
 
-      - name: Copy dist folder from dev
+      - name: Copy dist files from dev to root
         run: |
-          git checkout dev -- dist/
-          git add dist
-          git commit -m "Auto-sync dist from dev [skip ci]" || echo "No changes to commit"
+          git checkout dev -- dist
+          # Move all files from dist/ to the root
+          mv dist/* .
+          rm -rf dist
+          git add .
+          git commit -m "Auto-sync dist from dev to root [skip ci]" || echo "No changes to commit"
 
       - name: Push updated main
         env:
