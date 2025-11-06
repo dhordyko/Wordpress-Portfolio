@@ -1,3 +1,5 @@
+/* Responsive View Mixins*/
+/* Mobile View */
 @font-face {
   font-family: "Poppins", sans-serif;
   font-style: bold;
@@ -60,10 +62,6 @@ h5 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Responsive View Mixins*/
-/* Mobile View */
-/* Responsive View Mixins*/
-/* Mobile View */
 @font-face {
   font-family: "Poppins", sans-serif;
   font-style: bold;
@@ -426,8 +424,6 @@ footer.footer-container .column-2 .main-header__social-links .footer-mail {
   padding-left: 13%;
 }
 
-/* Responsive View Mixins*/
-/* Mobile View */
 .protfolio-section {
   max-width: calc(72vw + 10%);
   padding-left: 5%;
@@ -640,8 +636,6 @@ footer.footer-container .column-2 .main-header__social-links .footer-mail {
   object-fit: cover;
 }
 
-/* Responsive View Mixins*/
-/* Mobile View */
 @media (min-width: 1000px) and (max-width: 1300px) {
   header .main-header__main-content-container {
     padding-top: 0px;
@@ -853,8 +847,6 @@ footer.footer-container .column-2 .main-header__social-links .footer-mail {
     margin-right: 0px;
   }
 }
-/* Responsive View Mixins*/
-/* Mobile View */
 @media (min-width: 0px) and (max-width: 600px) {
   body div.history-section div#history {
     padding-left: 15px;
@@ -919,8 +911,6 @@ footer.footer-container .column-2 .main-header__social-links .footer-mail {
     top: -2%;
   }
 }
-/* Responsive View Mixins*/
-/* Mobile View */
 @media (min-width: 0px) and (max-width: 650px) {
   footer.footer-container {
     flex-direction: column-reverse;
@@ -944,8 +934,6 @@ footer.footer-container .column-2 .main-header__social-links .footer-mail {
     max-width: 100% !important;
   }
 }
-/* Responsive View Mixins*/
-/* Mobile View */
 @media (min-width: 0px) and (max-width: 600px) {
   .protfolio-section .card-list-container .card-item .back h3 {
     margin-bottom: 0px;
