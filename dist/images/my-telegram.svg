@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23.28 23.19">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0" y1="11.6" x2="23.28" y2="11.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d648a4"/>
+      <stop offset=".23" stop-color="#b558d5"/>
+      <stop offset=".51" stop-color="#4b8df9"/>
+      <stop offset=".72" stop-color="#3996ff"/>
+      <stop offset="1" stop-color="#c3c"/>
+      <stop offset="1" stop-color="#252c39"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M11.64,0C5.21,0,0,5.19,0,11.6s5.21,11.6,11.64,11.6,11.64-5.19,11.64-11.6S18.07,0,11.64,0Zm5.72,7.94l-1.91,8.97c-.14,.64-.52,.79-1.05,.49l-2.91-2.14-1.4,1.35c-.15,.15-.29,.29-.59,.29l.21-2.95,5.39-4.85c.24-.21-.05-.32-.36-.12l-6.66,4.18-2.87-.89c-.62-.2-.64-.62,.13-.92l11.22-4.31c.52-.19,.98,.13,.81,.91h0Z" style="fill: url(#linear-gradient);"/>
+</svg>
