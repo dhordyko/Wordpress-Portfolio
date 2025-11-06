@@ -5,8 +5,7 @@ on:
     branches:
       - dev
     paths:
-      - "dist/**"
-
+      - "dist/**" # Only run when files in dist/ change
 permissions:
   contents: write
 
@@ -21,33 +20,23 @@ jobs:
           ref: dev
           fetch-depth: 0
 
-      - name: Configure Git identity
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Fetch main branch
-        run: git fetch origin main:main
-
-      - name: Checkout main branch
-        run: git checkout main
-
-      - name: Copy dist files from dev to root
+      - name: Switch to main branch
         run: |
-          # Bring the dist folder from dev branch
-          git checkout dev -- dist
+          git checkout main
 
-          # Use rsync to safely overwrite files in root with dist contents
-          rsync -av --delete dist/ .
+      - name: Copy dist folder from dev
+        run: |
+          git checkout dev -- dist/
+          git add dist
+          git commit -m "Auto-sync dist from dev [skip ci]" || echo "No changes to commit"
 
-          # Clean up
-          rm -rf dist
-
-          # Add and commit only if there are changes
-          git add .
-          git diff --quiet && echo "No changes to commit" || git commit -m "Auto-sync dist from dev to root [skip ci]"
-
-      - name: Push updated main
+      - name: Push changes to main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: git push origin main
+        run: |
+          git push origin main
