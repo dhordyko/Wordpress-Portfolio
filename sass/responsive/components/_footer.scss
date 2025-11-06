@@ -1,11 +1,21 @@
 @import "../../abstracts/mixin";
 @include screen($min: 0, $max: 650) {
   footer.footer-container {
-    flex-direction: column;
-
+  
+    flex-direction: column-reverse;
     flex-wrap: nowrap;
+    height: fit-content;
     .column-2 {
+     margin-top:15px;
+     margin-bottom:35px;
       width: 100%;
+      justify-content: start;
+      .main-header__social-links{
+        align-items: start;
+        .footer-phone, .footer-mail{
+            padding-left:0px;
+        }
+      }
       ul {
         width: 100%;
         max-width: 100% !important;

@@ -19,7 +19,7 @@
 }
 @include screen($min: 600, $max: 1000) {
   header {
-    height: fit-content;
+    
     .main-header {
       &__img-bg-holder {
         top: 0;
@@ -161,8 +161,7 @@
           }
         }
         .contact-outer-container {
-          position: absolute;
-          top: 20px;
+        
           right: 0;
           .contact-container {
             margin-top: 0px;
@@ -176,7 +175,7 @@
         position: relative;
 
         .main-header__text-holder {
-          width: 80%;
+          width: 100%;
           align-items: end;
 
           & > div {
@@ -224,6 +223,31 @@
           padding: 0px;
         }
       }
+    }
+  }
+}
+@include screen($min: 0, $max: 1250) {
+  header {
+    .banner-container{
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      .main-header__social-links{
+        order:2;
+      }
+      .main-header__img-bg-holder{
+        order:1;
+        margin-right: auto;
+        width: 100%;
+      }
+      #about_me{
+        order:3;
+        justify-content: start;
+      }
+    }
+    .main-header__main-content-container .main-header__social-links{
+      flex-direction: row-reverse;
+      margin-right: 0px;
     }
   }
 }

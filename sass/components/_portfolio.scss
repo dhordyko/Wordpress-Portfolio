@@ -1,6 +1,26 @@
 @import "../abstracts/mixin";
 .protfolio-section {
   @include layout(72);
+  @media (min-width:1700px){
+    max-width: 1700px;
+  }
+  .tech-stack {
+    margin-bottom:105px;
+    .tech-list{
+      max-width:750px;
+      p{
+        line-height: 1.5;
+        span:nth-child(odd){
+          color: #ab2dff;
+         
+        }
+        span:nth-child(even){
+          color:#38c2ef;
+        }
+       
+      }
+    }
+  }
   .card-list-container {
     .card-item {
       margin-bottom: 10px;

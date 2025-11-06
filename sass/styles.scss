@@ -12,6 +12,7 @@ body {
   color: white;
   background: black;
   position: relative;
+  font-family: $poppins;
   &::before {
     content: "";
     background: url(../images/bg-image.webp);
@@ -126,39 +127,4 @@ html {
   @media screen and (max-width: 414px) {
     border: 5px solid white;
   }
-}
-@font-face {
-  font-family: "Poppins", sans-serif;
-  font-style: bold;
-  font-weight: 700;
-  src: url(./fonts/poppins/Poppins-Bold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Poppins", sans-serif;
-  font-style: bold;
-  font-weight: 400;
-  src: url(./fonts/poppins/Poppins-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  src: url(./fonts/poppins/Poppins-Light.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  src: url(./fonts/poppins/Poppins-SemiBold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  src: url(./fonts/poppins/Poppins-Medium.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  src: url(./fonts/poppins/Poppins-Regular.woff) format("woff");
 }

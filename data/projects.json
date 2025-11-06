@@ -111,9 +111,9 @@
   },
   {
     "class": "card_3",
-    "image": "./images/projects/ccmec.webp",
-    "link": "https://ccme-convention.ca/",
-    "description": "CCME",
+    "image": "./images/projects/revinew.webp",
+    "link": "https://revinew.ai/",
+    "description": "Revinew",
     "technologies": [
       "HTML",
       "SASS",
@@ -126,8 +126,9 @@
       "ACF"
     ]
   },
+ 
   {
-    "class": "card_4",
+    "class": "card_3",
     "image": "./images/projects/illumia.webp",
     "link": "https://illumialabs.ai/",
     "description": "Illumia Labs",
@@ -136,7 +137,6 @@
       "SASS",
       "CSS",
       "WordPress",
-      "AJAX",
       "jQuery",
       "Gutenberg editor",
       "Custom blocks",
@@ -229,24 +229,9 @@
       "Woocommerce"
     ]
   },
-    {
-    "class": "card_11",
-    "image": "./images/projects/revinew.webp",
-    "link": "https://wordpress-1317953-5490154.cloudwaysapps.com/",
-    "description": "Reveniw",
-    "technologies": [
-      "HTML",
-      "SASS",
-      "WordPress Block Theme",
-      "Gutenberg",
-      "jQuery",
-      "ACF",
-      "CSS",
-      "Animation"
-    ]
-  },
+
  {
-    "class": "card_12",
+    "class": "card_11",
     "image": "./images/projects/downtown.webp",
     "link": "https://downtownwinnipegbiz.com",
     "description": "Downtown Biz",
@@ -261,7 +246,7 @@
     ]
   },
   {
-    "class": "card_13",
+    "class": "card_12",
     "image": "./images/projects/foldecor.webp",
     "link": "https://www.foldekor.pl/",
     "description": "Foldecor",
