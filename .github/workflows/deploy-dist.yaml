@@ -27,54 +27,22 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Fetch main branch
-        run: git fetch origin main:main
+        run: |
+          git fetch origin main:main
 
       - name: Checkout main branch
         run: git checkout main
 
-      - name: Sync dist files from dev to root
+      - name: Copy dist files from dev to root
         run: |
-          # Get latest dist folder from dev branch
           git checkout dev -- dist
-
-          # Use rsync to safely copy and overwrite existing files
-          rsync -av --delete dist/ .
-
-          # Clean up dist folder
+          # Move all files from dist/ to the root
+          mv dist/* .
           rm -rf dist
-
-          # Commit changes if there are any
           git add .
-          git diff --quiet && echo "No changes to commit" || git commit -m "Auto-sync dist from dev to root [skip ci]"
+          git commit -m "Auto-sync dist from dev to root [skip ci]" || echo "No changes to commit"
 
       - name: Push updated main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: git push origin main
-
-  # Optional: Deploy main to GitHub Pages automatically
-  deploy:
-    needs: sync-dist
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
-    steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
