@@ -27,20 +27,25 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Fetch main branch
-        run: |
-          git fetch origin main:main
+        run: git fetch origin main:main
 
       - name: Checkout main branch
         run: git checkout main
 
       - name: Copy dist files from dev to root
         run: |
+          # Bring the dist folder from dev branch
           git checkout dev -- dist
-          # Move all files from dist/ to the root
-          mv dist/* .
+
+          # Use rsync to safely overwrite files in root with dist contents
+          rsync -av --delete dist/ .
+
+          # Clean up
           rm -rf dist
+
+          # Add and commit only if there are changes
           git add .
-          git commit -m "Auto-sync dist from dev to root [skip ci]" || echo "No changes to commit"
+          git diff --quiet && echo "No changes to commit" || git commit -m "Auto-sync dist from dev to root [skip ci]"
 
       - name: Push updated main
         env:
